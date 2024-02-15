@@ -7,8 +7,8 @@ name: Deploy to Firebase Hosting on merge
     branches:
       - main
 env:
-  REACT_APP_SUPABASE_URL: ${{secrets.REACT_APP_SUPABASE_URL}}
-  REACT_APP_SUPABASE_KEY: ${{secrets.REACT_APP_SUPABASE_KEY}}
+  VITE_SUPABASE_URL: ${{secrets.VITE_SUPABASE_URL}}
+  VITE_KEY: ${{secrets.VITE_SUPABASE_KEY}}
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
